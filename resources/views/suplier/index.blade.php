@@ -38,6 +38,11 @@
                 No
             </p>
             </th>
+            <th class="p-4 border-b border-slate-200 bg-slate-50">
+                <p class="text-sm font-normal leading-none text-slate-500">
+                    ID Supplier
+                </p>
+                </th>
            <th class="p-4 border-b border-slate-200 bg-slate-50">
            <p class="text-sm font-normal leading-none text-slate-500">
                Name
@@ -71,6 +76,9 @@
            <td class="p-4 py-5">
             <p class="text-sm text-slate-500">{{ $loop->iteration }}</p>
            </td>
+           <td class="p-4 py-5">
+            <p class="text-sm text-slate-500">{{ $suplier->id_suplier }}</p>
+            </td>
            <td class="p-4 py-5">
            <p class="text-sm text-slate-500">{{ $suplier->nama_suplier }}</p>
            </td>

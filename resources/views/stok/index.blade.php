@@ -14,7 +14,7 @@
            <div class="relative">
                <input
                class="bg-white w-full pr-11 h-10 pl-3 py-2 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded transition duration-200 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
-               placeholder="Search for user data..."
+               placeholder="Search for stock data..."
                />
                <button
                class="absolute h-8 w-8 right-1 top-1 my-auto px-2 flex items-center bg-white rounded "
@@ -103,7 +103,7 @@
             <p class="text-sm text-slate-500">
                 <a href="{{ route('stok.destroy', $stok->id) }}"
                     class="font-medium text-blue-600 hover:text-blue-800"
-                    onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this supplier?')) { document.getElementById('delete-form-{{ $stok->id }}').submit(); }">
+                    onclick="event.preventDefault(); if(confirm('Are you sure you want to delete this stok?')) { document.getElementById('delete-form-{{ $stok->id }}').submit(); }">
                      Hapus
                  </a>
                  <form id="delete-form-{{ $stok->id }}" action="{{ route('stok.destroy', $stok->id) }}" method="POST" style="display: none;">

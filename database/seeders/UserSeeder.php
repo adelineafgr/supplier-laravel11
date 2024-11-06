@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
                 'nama' => 'Petugas Gudang',
                 'username' => 'gudang444',
                 'password' => 'gudang444',
-                'level' => 'petugas_gudang',
+                'level' => 'petugas',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

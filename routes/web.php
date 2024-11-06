@@ -32,15 +32,16 @@ Route::get('/barangKeluar/create', [BarangKeluarController::class, 'create'])->n
 // Rute untuk menambahkan data baru
 Route::post('/suplier', [SuplierController::class, 'store'])->name('suplier.store');
 Route::post('/user', [UserController::class, 'store'])->name('user.store');
+Route::post('/stok', [StokController::class, 'store'])->name('stok.store');
 Route::get('/pinjamBarang', [PinjamBarangController::class, 'store'])->name('pinjamBarang.store');
 Route::get('/barangMasuk', [BarangMasukController::class, 'store'])->name('barangmasuk.store');
 Route::get('/barangKeluar', [BarangKeluarController::class, 'store'])->name('barangkeluar.store');
-//Route::get('/stok', [StokController::class, 'store'])->name('stok.store');
+
 
 // Route untuk menampilkan form edit
 Route::get('/suplier/{suplier}', [SuplierController::class, 'edit'])->name('suplier.edit');
 Route::get('/user/{user}', [UserController::class, 'edit'])->name('user.edit');
-Route::get('stok/{stok}', [StokController::class, 'stok'])->name('stok.edit');
+Route::get('stok/{stok}', [StokController::class, 'edit'])->name('stok.edit');
 Route::get('/pinjamBarang/{pinjambarang}', [PinjamBarangController::class, 'edit'])->name('pinjamBarang.edit');
 Route::get('/barangMasuk/{barangmasuk}', [BarangMasukController::class, 'edit'])->name('barangmasuk.edit');
 Route::get('/barangKeluar/{barangkeluar}', [BarangKeluarController::class, 'edit'])->name('barangkeluar.edit');
@@ -48,6 +49,7 @@ Route::get('/barangKeluar/{barangkeluar}', [BarangKeluarController::class, 'edit
 // Route untuk mengupdate data 
 Route::put('/suplier/{suplier}', [SuplierController::class, 'update'])->name('suplier.update');
 Route::put('/user/{user}', [UserController::class, 'update'])->name('user.update');
+Route::put('/stok/{stok}', [StokController::class, 'update'])->name('stok.update');
 Route::get('/pinjamBarang/{pinjambarang}', [PinjamBarangController::class, 'update'])->name('pinjamBarang.update');
 Route::get('/barangMasuk/{barangmasuk}', [BarangMasukController::class, 'update'])->name('barangmasuk.update');
 Route::get('/barangKeluar/{barangkeluar}', [BarangKeluarController::class, 'update'])->name('barangkeluar.update');

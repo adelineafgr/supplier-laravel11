@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->integer('id_barang');
             $table->string('nama_barang');
-            $table->integer('tgl_keluar');
+            $table->date('tgl_keluar');
             $table->integer('jml_keluar');
-            $table->integer('penerima');
+            $table->string('penerima');
             $table->timestamps();
         });
     }
